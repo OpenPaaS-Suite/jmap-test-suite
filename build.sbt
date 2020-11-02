@@ -21,3 +21,5 @@ libraryDependencies ++= Seq(
   "com.dimafeng" %% "testcontainers-scala-core" % testcontainersScalaVersion % "test",
 )
 testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
+//to run tests in a separate JVM from sbt. This allows for graceful shutdown of containers once the tests have finished running.
+Test / fork := true
