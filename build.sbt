@@ -1,4 +1,4 @@
-name := "jmap-validation"
+name := "jmap-test-suite"
 
 version := "0.1"
 
